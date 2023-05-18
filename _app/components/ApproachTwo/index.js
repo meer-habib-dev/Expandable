@@ -18,6 +18,7 @@ const ApproachTwo = () => {
           />
         ))}
       </ExpandableGroup>
+      {/* Single Expandable */}
       <AlternativeExpandable
         title={'Meer Habib (Flutter)'}
         description={

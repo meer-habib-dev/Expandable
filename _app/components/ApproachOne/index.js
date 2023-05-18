@@ -18,7 +18,7 @@ const ApproachOne = () => {
           </Expandable>
         ))}
       </ExpandableGroup>
-
+      {/* Single Expandable */}
       <Expandable>
         <Expandable.Header>Meer Habib (React Native)</Expandable.Header>
         <Expandable.Icon />
