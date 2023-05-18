@@ -2,11 +2,11 @@
 
 [![Moove It](https://circleci.com/gh/moove-it/react-native-template.svg?style=svg)](https://app.circleci.com/pipelines/github/moove-it/react-native-template?branch=master)
 
-This project is a mobile application created using React Native. The project includes features like navigation, Post planets ui, Planet Listing Ui, and different screens for various functionalities.
+This Project is going to be an accordion library on React Native mobile apps..
 
 ## Demo
 
-- App Download Link - https://portal.testapp.io/apps/install/ajbWpVvq1Awjx
+- App Download Link - Not Generated Yet
 
 ## Screenshots
 
@@ -15,10 +15,10 @@ Here you can include screenshots of your project.
 ## Screenshots - of all screens
 
 <p float="left">
-  <img src="/_app/@lib/assets/projectsScreenshots/1.png" width="200" />
-  <img src="/_app/@lib/assets/projectsScreenshots/2.png" width="200" /> 
-  <img src="/_app/@lib/assets/projectsScreenshots/3.png" width="200" /> 
-  <img src="/_app/@lib/assets/projectsScreenshots/4.png" width="200" /> 
+  <img src="/_app/@lib/assets/projectsScreenShots/1.png" width="200" />
+  <img src="/_app/@lib/assets/projectsScreenShots/2.png" width="200" /> 
+  <img src="/_app/@lib/assets/projectsScreenShots/3.png" width="200" /> 
+  <img src="/_app/@lib/assets/projectsScreenShots/4.png" width="200" /> 
  
 </p>
 
@@ -55,22 +55,12 @@ This template follows a very simple project structure:
 
 - `_app`: This folder is the main container of all the code inside your application.
   - `@lib`: This folder contains all actions that can be dispatched to redux.
-    - `api` : 'Handles all the api call through out the app'
     - `assets`: Asset folder to store all images, vectors, etc.
     - `constants`: Folder to store any kind of constant that you have.
     - `Hooks`: Holds all reusable hooks.
     - `utils`: Holds all the utility functions.
     - `store`: Folder to put all redux middlewares and the store.
-  - `components`: Folder to put all redux middlewares and the store.
-    - `common`: Holds all the common ui components (like button, input, alert).
-    - `navigation`: Folder to store the navigators.
-      - `StackNavigator` : Holds all stack screens.
-      - `TabNavigator` : Holds all tab screens.
-    - `screens`: Folder that contains all your application screens/features.
-      - `Screen`: Each screen should be stored inside its folder and inside it a file for its code and a separate one for the styles and tests.
-        - `index.js`
-        - `Screen.styles.js`
-        - `utils` : contains respective screens data, hooks and functions
+  - `components`: This folder has all the files and folder that contains components.
 - `App.js`: Main component that starts your whole app.
 - `index.js`: Entry point of your application as per React-Native standards.
 

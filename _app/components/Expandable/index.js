@@ -1,29 +1,15 @@
 import React, {useContext, useRef, useState} from 'react';
 import {View, Text, TouchableOpacity, Image} from 'react-native';
 import {styles} from '../../@lib/styles/styles.expandable';
+import {requiredComponents} from '../../@lib/Assets/data/accordionData';
 
 const ExpandableContext = React.createContext();
 
 const Expandable = ({children, onPress, expanded}) => {
-  const requiredComponents = [
-    {
-      key: 'ExpandableHeader',
-      error: 'Expandable.Header',
-    },
-    {
-      key: 'ExpandableIcon',
-      error: 'Expandable.Icon',
-    },
-    {
-      key: 'ExpandableBody',
-      error: 'Expandable.Body',
-    },
-  ];
-
+  // Handle Missing and Extra components as children
   const childComponents = React.Children.toArray(children).map(
     child => child.type.name,
   );
-
   const missingComponents = requiredComponents.filter(
     component => !childComponents.includes(component.key),
   );
@@ -34,17 +20,26 @@ const Expandable = ({children, onPress, expanded}) => {
         .join(', ')}`,
     );
   }
+  if (children.length > 3) {
+    throw new Error(
+      `Expandable only contain these three components: ${requiredComponents
+        .map(item => item.error)
+        .join(', ')}`,
+    );
+  }
 
+  // Creating references
   const header = useRef(null);
   const icon = useRef(null);
   const body = useRef(null);
 
+  // Handling States for accordion toggle
   const [singleExpanded, setExpanded] = useState(false);
-
   const toggleExpanded = () => {
     onPress ? onPress() : setExpanded(expand => !expand);
   };
   const modExpanded = onPress ? expanded : singleExpanded;
+
   // Extract the Expandable.Header component's text (React.Children.toArray(children))
   const renderText = comp => {
     return React.Children.toArray(children)

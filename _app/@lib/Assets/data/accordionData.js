@@ -26,3 +26,17 @@ export const flutterQuestions = [
     des: 'Flutter offers several benefit, including hot reload for instant code changes, a rich set of pre-built UI components (widgets), a single codebase for multiple platforms, excellent performance, and access to native device features through platform channels.',
   },
 ];
+export const requiredComponents = [
+  {
+    key: 'ExpandableHeader',
+    error: 'Expandable.Header',
+  },
+  {
+    key: 'ExpandableIcon',
+    error: 'Expandable.Icon',
+  },
+  {
+    key: 'ExpandableBody',
+    error: 'Expandable.Body',
+  },
+];
