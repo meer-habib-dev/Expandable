@@ -1,6 +1,6 @@
 import React, {memo, useState} from 'react';
 import {View, TouchableOpacity, Text, Image} from 'react-native';
-import {styles} from '../../styles/styles.expandable';
+import {styles} from '../../@lib/styles/styles.expandable';
 
 const AlternativeExpandable = ({title, description, onPress, expanded}) => {
   const [singleExpanded, setExpanded] = useState(false);
@@ -10,8 +10,8 @@ const AlternativeExpandable = ({title, description, onPress, expanded}) => {
   };
   const modExpanded = onPress ? expanded : singleExpanded;
   const expandedIcon = modExpanded
-    ? require('../../Assets/images/minus.png')
-    : require('../../Assets/images/plus.png');
+    ? require('../../@lib/Assets/images/minus.png')
+    : require('../../@lib/Assets/images/plus.png');
   return (
     <View>
       <TouchableOpacity onPress={toggleExpanded} style={styles.titleWrapper}>

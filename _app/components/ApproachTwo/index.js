@@ -2,8 +2,8 @@ import {Text, View} from 'react-native';
 import React, {memo} from 'react';
 import ExpandableGroup from '../ExpandableGroup';
 import AlternativeExpandable from '../AlternativeExpandable';
-import {styles} from '../../styles/styles.expandable';
-import {flutterQuestions} from '../../Assets/data/accordionData';
+import {styles} from '../../@lib/styles/styles.expandable';
+import {flutterQuestions} from '../../@lib/Assets/data/accordionData';
 
 const ApproachTwo = () => {
   return (

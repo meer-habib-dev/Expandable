@@ -1,6 +1,6 @@
 import React, {useContext, useRef, useState} from 'react';
 import {View, Text, TouchableOpacity, Image} from 'react-native';
-import {styles} from '../../styles/styles.expandable';
+import {styles} from '../../@lib/styles/styles.expandable';
 
 const ExpandableContext = React.createContext();
 
@@ -53,8 +53,8 @@ const Expandable = ({children, onPress, expanded}) => {
       .join('');
   };
   const expandedIcon = modExpanded
-    ? require('../../Assets/images/minus.png')
-    : require('../../Assets/images/plus.png');
+    ? require('../../@lib/Assets/images/minus.png')
+    : require('../../@lib/Assets/images/plus.png');
   return (
     <ExpandableContext.Provider
       value={{header, icon, body, toggleExpanded, modExpanded, expandedIcon}}>

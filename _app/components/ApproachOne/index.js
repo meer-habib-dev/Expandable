@@ -2,8 +2,8 @@ import {Text} from 'react-native';
 import React, {memo} from 'react';
 import ExpandableGroup from '../ExpandableGroup';
 import Expandable from '../Expandable';
-import {styles} from '../../styles/styles.expandable';
-import {reactNativeQuestions} from '../../Assets/data/accordionData';
+import {styles} from '../../@lib/styles/styles.expandable';
+import {reactNativeQuestions} from '../../@lib/Assets/data/accordionData';
 
 const ApproachOne = () => {
   return (
