@@ -1,7 +1,7 @@
 import React, {useContext, useRef, useState} from 'react';
 import {View, Text, TouchableOpacity, Image} from 'react-native';
 import {styles} from '../../@lib/styles/styles.expandable';
-import {requiredComponents} from '../../@lib/Assets/data/accordionData';
+import {requiredComponents} from '../../@lib/assets/data/accordionData';
 
 const ExpandableContext = React.createContext();
 
@@ -48,8 +48,8 @@ const Expandable = ({children, onPress, expanded}) => {
       .join('');
   };
   const expandedIcon = modExpanded
-    ? require('../../@lib/Assets/images/minus.png')
-    : require('../../@lib/Assets/images/plus.png');
+    ? require('../../@lib/assets/images/minus.png')
+    : require('../../@lib/assets/images/plus.png');
   return (
     <ExpandableContext.Provider
       value={{header, icon, body, toggleExpanded, modExpanded, expandedIcon}}>

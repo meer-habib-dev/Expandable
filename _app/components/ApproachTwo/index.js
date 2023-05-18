@@ -3,7 +3,7 @@ import React, {memo} from 'react';
 import ExpandableGroup from '../ExpandableGroup';
 import AlternativeExpandable from '../AlternativeExpandable';
 import {styles} from '../../@lib/styles/styles.expandable';
-import {flutterQuestions} from '../../@lib/Assets/data/accordionData';
+import {flutterQuestions} from '../../@lib/assets/data/accordionData';
 
 const ApproachTwo = () => {
   return (

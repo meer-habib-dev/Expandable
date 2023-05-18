@@ -3,7 +3,7 @@ import React, {memo} from 'react';
 import ExpandableGroup from '../ExpandableGroup';
 import Expandable from '../Expandable';
 import {styles} from '../../@lib/styles/styles.expandable';
-import {reactNativeQuestions} from '../../@lib/Assets/data/accordionData';
+import {reactNativeQuestions} from '../../@lib/assets/data/accordionData';
 
 const ApproachOne = () => {
   return (
