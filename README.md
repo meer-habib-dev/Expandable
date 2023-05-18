@@ -37,7 +37,7 @@ To run this project locally, follow the below steps:
 
 1. Clone the project repository from GitHub.
 
-`https://github.com/meer-habib-dev/Mini_Twitter.git`
+`https://github.com/meer-habib-dev/Expandable.git`
 
 After that you should proceed as with any javascript project:
 
