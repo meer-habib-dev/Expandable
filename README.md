@@ -15,10 +15,10 @@ Here you can include screenshots of your project.
 ## Screenshots - of all screens
 
 <p float="left">
-  <img src="/_app/@lib/assets/projectsScreenShots/1.png" width="200" />
-  <img src="/_app/@lib/assets/projectsScreenShots/2.png" width="200" /> 
-  <img src="/_app/@lib/assets/projectsScreenShots/3.png" width="200" /> 
-  <img src="/_app/@lib/assets/projectsScreenShots/4.png" width="200" /> 
+  <img src="/_app/@lib/assets/projectScreenShots/1.png" width="200" />
+  <img src="/_app/@lib/assets/projectScreenShots/2.png" width="200" /> 
+  <img src="/_app/@lib/assets/projectScreenShots/3.png" width="200" /> 
+  <img src="/_app/@lib/assets/projectScreenShots/4.png" width="200" /> 
  
 </p>
 
